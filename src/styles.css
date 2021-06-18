@@ -11,6 +11,7 @@ grey #e5e5e5
   --brand-yellow: #fdc435;
   --light-grey: #f9faff;
   --color-black: #25282b;
+  --medium-grey: #828282;
 }
 
 body {
@@ -31,7 +32,7 @@ h1 {
   padding: 0px;
 }
 
-.intro-description {
+.pre-intro {
   font-family: var(--body-font);
   color: var(--brand-yellow);
   text-transform: uppercase;
@@ -45,6 +46,14 @@ h1 {
   line-height: 76.8px;
   font-weight: 700;
   color: var(--color-black);
+}
+
+.intro-description {
+  font-family: var(--body-font);
+  color: var(--medium-grey);
+  font-size: 24px;
+  font-weight: 200;
+  line-height: 36px;
 }
 
 .home-buttons {
