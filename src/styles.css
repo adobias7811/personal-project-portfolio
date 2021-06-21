@@ -139,6 +139,33 @@ hr {
   margin: 80px 0;
 }
 
+.about-section {
+  padding: 150px 120px;
+}
+.about-heading {
+  font-family: var(--heading-font);
+  font-size: 48px;
+  line-height: 72px;
+  font-weight: 700;
+  color: var(--color-black);
+}
+
+.about-intro {
+  font-family: var(--body-font);
+  color: var(--brand-yellow);
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 27.28px;
+}
+
+.about-description {
+  font-family: var(--body-font);
+  color: var(--medium-grey);
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 30px;
+}
+
 @media (max-width: 576px) {
   .heroText {
     display: block;
@@ -165,5 +192,18 @@ hr {
   }
   .project {
     margin: 30px 0;
+  }
+
+  .projects-button {
+    margin-bottom: 30px;
+  }
+
+  .about-section {
+    text-align: center;
+    padding: 0;
+  }
+
+  .about-image {
+    width: 300px;
   }
 }
