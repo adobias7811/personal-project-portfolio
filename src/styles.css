@@ -105,12 +105,11 @@ hr {
 .project-text {
   background-color: white;
   border-radius: 10px;
-  margin: 0;
+  padding: 20px 0 20px 20px;
 }
 
-.project-pg-images {
+.project-image {
   border-radius: 10px;
-  width: 300px;
 }
 
 .project-heading {
@@ -123,7 +122,7 @@ hr {
   color: var(--medium-grey);
   font-weight: 200;
   line-height: 27px;
-  margin: 24px 0;
+  margin: 10px 0;
 }
 
 .btn-projects-outline {
@@ -198,10 +197,6 @@ hr {
   left: 80px;
 }
 
-.portfolio-projects {
-  margin: 20px 0;
-}
-
 @media (max-width: 576px) {
   .heroText {
     display: block;
@@ -241,5 +236,30 @@ hr {
 
   .about-image {
     width: 300px;
+  }
+
+  .portfolio-background {
+    width: 68%;
+  }
+
+  .portfolio-heading {
+    font-size: 24px;
+    position: absolute;
+    top: 50px;
+    left: 40px;
+  }
+
+  .portfolio-image {
+    width: 300px;
+    display: block;
+    margin: 10 auto;
+  }
+
+  .portfolio-labels a {
+    text-align: center;
+  }
+
+  .project-description {
+    text-align: center;
   }
 }
