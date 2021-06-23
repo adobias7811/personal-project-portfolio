@@ -171,6 +171,7 @@ hr {
 }
 .portfolio-background {
   margin-left: 0;
+    margin-top: -400px;
 }
 
 .portfolio-section {
@@ -299,14 +300,17 @@ nav a:hover, nav li.active a {
   }
 
   .portfolio-background {
+    margin-left: 0;
+    margin-top: -280px;
     width: 68%;
   }
 
   .portfolio-heading {
-    font-size: 24px;
+    padding: 20px;
+    font-size: 32px;
     position: absolute;
     top: 50px;
-    left: 40px;
+    left: 70px;
   }
 
   .portfolio-image {
@@ -344,9 +348,14 @@ nav a:hover, nav li.active a {
     margin: 10px auto;
   }
 
-  nav li {
-  justify-content: center;
-  font-size: 16px;
+nav ul {
+justify-content: center;  
+font-size: 16px;
   margin-left: 2px;
   }
+
+  nav a.portfolio-nav:hover, nav li.active-portfolio a {
+  color: white;
+  transition: all 100ms ease-in-out;
+}
 }
