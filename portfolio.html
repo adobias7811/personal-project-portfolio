@@ -27,31 +27,35 @@
     <link rel="stylesheet" href="/src/styles.css" />
   </head>
   <body>
-<div class="container">
-  <nav class="d-flex justify-content-between">
-    <p class="logo d-none d-md-block">Amanda Dobias</p>
-    <ul>
-      <li>
-        <a href="index.html" class="portfolio-nav">Home</a></li>
-      <li>
-        <a href="/about.html" class="portfolio-nav">About</a></li>
-      <li class="active active-portfolio">
-        <a href="/portfolio.html" class="portfolio-nav">Portfolio</a></li>
-      <li >
-        <a href="/contact.html" class="portfolio-nav">Contact</a></li>
-      </ul>
-    </nav>  
-</div>
+    <div class="container">
+      <nav class="d-flex justify-content-between">
+        <p class="logo d-none d-md-block">Amanda Dobias</p>
+        <ul>
+          <li>
+            <a href="index.html" class="portfolio-nav">Home</a>
+          </li>
+          <li>
+            <a href="/about.html" class="portfolio-nav">About</a>
+          </li>
+          <li class="active active-portfolio">
+            <a href="/portfolio.html" class="portfolio-nav">Portfolio</a>
+          </li>
+          <li>
+            <a href="/contact.html" class="portfolio-nav">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <div class="container portfolio-container">
-      <img
-        src="/images/project-pg-background.png"
-        width="600px"
-        class="float-start portfolio-background"
-      />
-      <h1 class="portfolio-heading">My Work</h1>
       <div class="portfolio-section">
+        <h1 class="portfolio-heading text-center">My Work</h1>
+        <hr />
+        <p class="about-description text-center">
+          Browse my latest projects below, find me on social or drop me a line
+          to say hey!
+        </p>
         <div class="row">
-          <div class="col">
+          <div class="col-md-6">
             <img
               src="/images/weather-app.png"
               class="portfolio-image img-fluid"
@@ -68,11 +72,10 @@
               Built with HTML, CSS & API Integration
             </p>
           </div>
-          <div class="col">
+          <div class="col-md-6">
             <img
               src="/images/responsive-website.png"
               class="portfolio-image img-fluid"
-              width="450px"
             />
             <h2 class="portfolio-labels">
               <a
@@ -86,7 +89,7 @@
               Built with HTML & CSS using Bootstrap & Flexbox
             </p>
           </div>
-          <div class="col">
+          <div class="col-md-6">
             <img
               src="/images/static-webpage.png"
               class="portfolio-image img-fluid"
@@ -108,7 +111,7 @@
               Built with HTML, CSS & Vanilla JavaScript
             </p>
           </div>
-          <div class="col">
+          <div class="col-md-6">
             <img
               src="/images/react-temp.jpg"
               class="portfolio-image img-fluid"
@@ -132,6 +135,26 @@
           </div>
         </div>
       </div>
+      <footer>
+        <div class="d-flex justify-content-center mb-5">
+          <a href="mailto:adobias11@gmail.com" class="email-link">
+            <i class="far fa-envelope"></i> adobias11@gmail.com</a
+          >
+        </div>
+        <div class="social-links d-flex justify-content-center">
+          <a
+            href="https://www.instagram.com/amanda_greathouse11/"
+            target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/amanda-dobias/" target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/adobias7811" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

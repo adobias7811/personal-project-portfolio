@@ -8,7 +8,7 @@ grey #e5e5e5
 :root {
   --heading-font: ‘Playfair Display’, serif;
   --body-font: ‘Nunito’, sans-serif;
-  --brand-yellow: #FDC435;
+  --brand-yellow: #fdc435;
   --light-grey: #f9faff;
   --color-black: #25282b;
   --medium-grey: #828282;
@@ -54,7 +54,8 @@ p {
   color: var(--color-black);
 }
 
-.intro-description, .logo {
+.intro-description,
+.logo {
   font-family: var(--body-font);
   color: var(--medium-grey);
   font-size: 24px;
@@ -140,7 +141,11 @@ hr {
 }
 
 .about-section {
-  padding: 150px 120px;
+  padding: 40px 40px;
+}
+
+.about-image {
+  margin-top: 40px;
 }
 .about-heading {
   font-family: var(--heading-font);
@@ -158,7 +163,8 @@ hr {
   line-height: 27.28px;
 }
 
-.about-description, li {
+.about-description,
+li {
   font-family: var(--body-font);
   color: var(--medium-grey);
   font-size: 20px;
@@ -171,7 +177,7 @@ hr {
 }
 .portfolio-background {
   margin-left: 0;
-    margin-top: -400px;
+  margin-top: -500px;
 }
 
 .portfolio-section {
@@ -180,7 +186,6 @@ hr {
 
 .portfolio-image {
   margin: 20px;
-  max-width: 400px;
   border-radius: 4px;
 }
 
@@ -193,9 +198,12 @@ hr {
 }
 
 .portfolio-heading {
-  position: absolute;
-  top: 120px;
-  left: 120px;
+  margin-top: 40px;
+  font-family: var(--heading-font);
+  font-size: 48px;
+  line-height: 72px;
+  font-weight: 700;
+  color: var(--color-black);
 }
 
 .contact-heading {
@@ -210,7 +218,7 @@ hr {
   margin-right: 80px;
 }
 
-.contact-description { 
+.contact-description {
   font-family: var(--body-font);
   color: var(--medium-grey);
   font-size: 20px;
@@ -244,9 +252,32 @@ nav a {
   color: var(--medium-grey);
 }
 
-nav a:hover, nav li.active a {
+nav a:hover,
+nav li.active a {
   color: var(--brand-yellow);
   transition: all 100ms ease-in-out;
+}
+
+footer {
+  margin: 60px 0;
+}
+
+footer .email-link {
+  text-decoration: none;
+  color: var(--medium-grey);
+  font-size: 24px;
+}
+
+footer .email-link:hover,
+footer .social-links a:hover {
+  color: var(--brand-yellow);
+  transition: all 100ms ease-in-out;
+}
+
+footer .social-links a {
+  margin: 0 20px;
+  color: var(--color-black);
+  font-size: 42px;
 }
 
 @media (max-width: 576px) {
@@ -260,12 +291,14 @@ nav a:hover, nav li.active a {
   }
 
   .intro-heading {
-    font-size: 36px;
-    margin: 80px 0px 10px 0px;
+    font-size: 42px;
+    text-align: center;
+    margin: 60px 0px 15px 0px;
     line-height: 1;
   }
   .intro-description {
     line-height: 1;
+    text-align: center;
   }
 
   .homepage-projects {
@@ -299,12 +332,6 @@ nav a:hover, nav li.active a {
     width: 300px;
   }
 
-  .portfolio-background {
-    margin-left: 0;
-    margin-top: -280px;
-    width: 68%;
-  }
-
   .portfolio-heading {
     padding: 20px;
     font-size: 32px;
@@ -327,19 +354,13 @@ nav a:hover, nav li.active a {
     text-align: center;
   }
 
-  .contact-image {    
-    display: block;
-    margin: 10px auto;
-    width: 200px;
-  }
-
   .contact-heading {
     font-size: 36px;
     margin: 100px 0px 10px 0px;
     line-height: 1;
   }
 
-  .sub-heading { 
+  .sub-heading {
     margin-top: 5px;
   }
 
@@ -348,14 +369,15 @@ nav a:hover, nav li.active a {
     margin: 10px auto;
   }
 
-nav ul {
-justify-content: center;  
-font-size: 16px;
-  margin-left: 2px;
+  nav ul {
+    justify-content: center;
+    font-size: 16px;
+    margin-left: 2px;
   }
 
-  nav a.portfolio-nav:hover, nav li.active-portfolio a {
-  color: white;
-  transition: all 100ms ease-in-out;
-}
+  nav a.portfolio-nav:hover,
+  nav li.active-portfolio a {
+    color: white;
+    transition: all 100ms ease-in-out;
+  }
 }
