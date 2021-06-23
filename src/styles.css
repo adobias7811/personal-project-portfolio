@@ -275,9 +275,19 @@ footer .social-links a:hover {
 }
 
 footer .social-links a {
-  margin: 0 20px;
+  margin: 0 20px 20px 20px;
   color: var(--color-black);
   font-size: 42px;
+}
+
+.about-description a {
+  text-decoration: none;
+  color: var(--medium-grey);
+}
+
+.about-description a:hover {
+  color: var(--brand-yellow);
+  transition: all 100ms ease-in-out;
 }
 
 @media (max-width: 576px) {
