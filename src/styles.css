@@ -292,13 +292,22 @@ hr {
 
   .contact-image {    
     display: block;
-    margin: 0 auto;
+    margin: 10px auto;
     width: 200px;
   }
 
   .contact-heading {
     font-size: 36px;
-    margin: 300px 0px 10px 0px;
+    margin: 100px 0px 10px 0px;
     line-height: 1;
+  }
+
+  .sub-heading { 
+    margin-top: 5px;
+  }
+
+  .email-button {
+    display: block;
+    margin: 10px auto;
   }
 }
