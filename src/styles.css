@@ -8,7 +8,7 @@ grey #e5e5e5
 :root {
   --heading-font: ‘Playfair Display’, serif;
   --body-font: ‘Nunito’, sans-serif;
-  --brand-yellow: #fdc435;
+  --brand-yellow: #FDC435;
   --light-grey: #f9faff;
   --color-black: #25282b;
   --medium-grey: #828282;
@@ -30,7 +30,7 @@ p {
 }
 
 .heroText {
-  margin-top: 110px;
+  margin-top: 60px;
   margin-left: 120px;
   display: flex;
   flex-direction: column;
@@ -54,7 +54,7 @@ p {
   color: var(--color-black);
 }
 
-.intro-description {
+.intro-description, .logo {
   font-family: var(--body-font);
   color: var(--medium-grey);
   font-size: 24px;
@@ -158,7 +158,7 @@ hr {
   line-height: 27.28px;
 }
 
-.about-description {
+.about-description, li {
   font-family: var(--body-font);
   color: var(--medium-grey);
   font-size: 20px;
@@ -224,19 +224,51 @@ hr {
   margin: 0 auto;
 }
 
+nav {
+  padding: 20px 0;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 40px;
+  margin-left: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--medium-grey);
+}
+
+nav a:hover, nav li.active a {
+  color: var(--brand-yellow);
+  transition: all 100ms ease-in-out;
+}
+
 @media (max-width: 576px) {
   .heroText {
     display: block;
     margin: 0 60px;
   }
 
+  .heroImage {
+    width: 100px;
+  }
+
   .intro-heading {
     font-size: 36px;
-    margin: 300px 0px 10px 0px;
+    margin: 80px 0px 10px 0px;
     line-height: 1;
   }
   .intro-description {
     line-height: 1;
+  }
+
+  .homepage-projects {
+    margin-top: 10px;
   }
 
   .btn {
@@ -245,8 +277,9 @@ hr {
     justify-content: center;
     margin: 10px;
   }
-  .project-text {
+  .homepage-projects {
     text-align: center;
+    margin: 20px;
   }
   .project {
     margin: 30px 0;
@@ -309,5 +342,11 @@ hr {
   .email-button {
     display: block;
     margin: 10px auto;
+  }
+
+  nav li {
+  justify-content: center;
+  font-size: 16px;
+  margin-left: 2px;
   }
 }
