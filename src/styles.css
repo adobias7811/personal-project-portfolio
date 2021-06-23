@@ -193,7 +193,7 @@ hr {
 
 .portfolio-heading {
   position: absolute;
-  top: 200px;
+  top: 120px;
   left: 120px;
 }
 
@@ -222,7 +222,6 @@ hr {
   text-align: center;
   display: block;
   margin: 0 auto;
-  padding: 10px;
 }
 
 @media (max-width: 576px) {
